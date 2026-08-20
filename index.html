@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#4f46e5">
+<meta name="description" content="Fee & Expense Manager Pro — teacher and coaching finance management system">
+<title>Fee & Expense Manager Pro</title>
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div id="toastRoot" class="toast-root"></div>
+<div id="modalRoot"></div>
+<div id="lockRoot"></div>
+
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="brand-logo">₹</div>
+      <div>
+        <strong id="brandTitle">FeeManager</strong>
+        <span>Finance Pro • v1</span>
+      </div>
+    </div>
+    <nav class="nav">
+      <button class="nav-item active" data-view="dashboard">🏠 <span>Dashboard</span></button>
+      <button class="nav-item" data-view="students">👨‍🎓 <span>Students</span></button>
+      <button class="nav-item" data-view="payments">💳 <span>Payments</span></button>
+      <button class="nav-item" data-view="receipts">🧾 <span>Receipts</span></button>
+      <button class="nav-item" data-view="expenses">💸 <span>Expenses</span></button>
+      <button class="nav-item" data-view="dues">⚠️ <span>Dues & Reminders</span></button>
+      <button class="nav-item" data-view="reports">📊 <span>Reports</span></button>
+      <button class="nav-item" data-view="analytics">📈 <span>Analytics</span></button>
+      <button class="nav-item" data-view="backup">💾 <span>Backup & Data</span></button>
+      <button class="nav-item" data-view="settings">⚙️ <span>Settings</span></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <button class="nav-item" data-action="about">ⓘ <span>About</span></button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="top-left">
+        <button class="icon-btn mobile-menu" id="mobileMenu">☰</button>
+        <div>
+          <div class="eyebrow" id="pageEyebrow">Finance</div>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+      </div>
+      <div class="top-actions">
+        <div class="date" id="liveDate"></div>
+        <button class="icon-btn" id="themeBtn" title="Toggle theme">◐</button>
+        <button class="icon-btn" id="notifyBtn" title="Notifications">🔔</button>
+        <button class="avatar" id="avatarBtn" title="Settings">T</button>
+      </div>
+    </header>
+
+    <div class="content">
+      <section id="view-dashboard" class="view active"></section>
+      <section id="view-students" class="view"></section>
+      <section id="view-payments" class="view"></section>
+      <section id="view-receipts" class="view"></section>
+      <section id="view-expenses" class="view"></section>
+      <section id="view-dues" class="view"></section>
+      <section id="view-reports" class="view"></section>
+      <section id="view-analytics" class="view"></section>
+      <section id="view-backup" class="view"></section>
+      <section id="view-settings" class="view"></section>
+    </div>
+  </main>
+</div>
+
+<script src="./assets/js/app.js" defer></script>
+</body>
+</html>
